@@ -1,4 +1,5 @@
-package com.example.shake_quote_app
+package com.example.shake_app
+
 
 import android.content.Context
 import android.hardware.Sensor
