@@ -36,6 +36,16 @@ class MainActivity : FlutterActivity(), SensorEventListener {
             })
     }
 
+override fun onPause() {
+    super.onPause()
+    stopListening()
+}
+
+override fun onResume() {
+    super.onResume()
+    // إذا تريد إعادة التسجيل تلقائياً عند الرجوع
+}
+
     private fun startListening() {
         sensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
         sensorManager?.registerListener(
@@ -59,7 +69,7 @@ class MainActivity : FlutterActivity(), SensorEventListener {
         val delta = accelCurrent - accelLast
         shake = shake * 0.9f + delta
 
-        if (shake > 12) { // مستوى الاهتزاز
+        if (shake > 12) {
             eventSink?.success("shake_detected")
         }
     }
