@@ -1,17 +1,26 @@
 # shake_app
+The goal of this project is to explore communication between Flutter (UI layer) and Kotlin (native Android layer) through a Platform Channel.
 
-A new Flutter project.
+The native Kotlin code listens for motion sensor data and sends an event to Flutter whenever a shake is detected.
+⚙️ Technologies Used 
+The goal of this project is to explore communication between Flutter (UI layer) and Kotlin (native Android layer) through a Platform Channel.
 
-## Getting Started
+The native Kotlin code listens for motion sensor data and sends an event to Flutter whenever a shake is detected.
+🚀 Features
+Real-time shake detection.
 
-This project is a starting point for a Flutter application.
+Smooth Flutter–Kotlin integration using native channels.
 
-A few resources to get you started if this is your first Flutter project:
+Lightweight and educational project setup.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+📖 Educational Purpose
+This project is ideal for learning:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+How to use Platform Channels in Flutter.
+
+How to integrate native Android Kotlin code.
+
+How to handle motion sensors (accelerometer).
+#Video 
+[!video](https://drive.google.com/drive/home?dmr=1&ec=wgc-drive-hero-goto)
+
